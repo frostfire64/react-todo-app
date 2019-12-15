@@ -1,0 +1,17 @@
+.TodoElement {
+    background: $box-color;
+    width: 100%;
+    box-shadow: $basic-shadow;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    box-sizing: content-box;
+    &--Active{
+        text-decoration: line-through;
+        color: darken($text-color, 30);
+        background-color: darken($box-color, 30);
+    }
+}
